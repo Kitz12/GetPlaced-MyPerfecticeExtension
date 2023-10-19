@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       if (saveAndNextButton) {
         saveAndNextButton.click();
       }
-    }, 1000);
+    }, 1200);
 
     setTimeout(() => {
       const nextbtn = document.querySelector(
@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       } else {
         nextbtn.click();
       }
-    }, 2000);
+    }, 2400);
   }
 
   if (message.msg == "start") {
