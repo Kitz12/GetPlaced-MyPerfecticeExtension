@@ -1,0 +1,45 @@
+body {
+  height: auto;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 15, 80);
+  color: grey;
+  flex-direction: column;
+}
+p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 13px;
+   }
+
+h3 {
+  color: white;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.btn {
+  height: 30px;
+  width: 80px;
+  border: 0px solid rgb(21, 193, 255);
+  border-radius: 10px;
+  background-color: rgb(200, 21, 255);
+  margin: 6px;
+  padding: 5px;
+}
+
+.btn:hover {
+  border: 3px solid rgb(200, 21, 255);
+  background-color: rgb(15, 15, 80);
+  color: rgb(0, 238, 255);
+  cursor: pointer;
+}
