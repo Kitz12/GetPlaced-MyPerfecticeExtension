@@ -1,7 +1,5 @@
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-  let a = Math.floor(Math.random() * 10000) + 45000;
-  console.log(a);
   if (message.msg == "Sending Data") {
     let ansKey = message.keys;
     console.log(ansKey);
@@ -23,7 +21,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       if (saveAndNextButton) {
         saveAndNextButton.click();
       }
-    }, a);
+    }, 1200);
 
     setTimeout(() => {
       const nextbtn = document.querySelector(
@@ -38,7 +36,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       } else {
         nextbtn.click();
       }
-    }, a + 1200);
+    }, 2400);
   }
 
   if (message.msg == "start") {
