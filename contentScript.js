@@ -1,4 +1,7 @@
+
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  let a = Math.floor(Math.random() * 10000) + 45000;
+  console.log(a);
   if (message.msg == "Sending Data") {
     let ansKey = message.keys;
     console.log(ansKey);
@@ -20,7 +23,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       if (saveAndNextButton) {
         saveAndNextButton.click();
       }
-    }, 1200);
+    }, a);
 
     setTimeout(() => {
       const nextbtn = document.querySelector(
@@ -35,10 +38,11 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       } else {
         nextbtn.click();
       }
-    }, 2400);
+    }, a + 1200);
   }
 
   if (message.msg == "start") {
     chrome.runtime.sendMessage({ msg: "startPanel" });
   }
 });
+
